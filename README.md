@@ -1,6 +1,28 @@
-# Project Name
+# Anvil Test Case Specification with Jest
 
-A brief description of what this project does and who it's for.
+This document describes the structure and usage of our Jest test cases for Anvil API testing. The test framework follows a consistent pattern for validating API responses, focusing on both positive and negative test scenarios.
+
+## Test Case Structure
+Each test case is defined as a JavaScript object with the following structure:
+
+```javascript
+{
+    name: 'Descriptive Test Case Name',
+    variables: {
+        payload: {
+            // API request payload
+        }
+    },
+    expectedIncludes: [
+        // Array of strings/documents-names that MUST appear in response
+    ],
+    expectedExcludes: [
+        // Array of strings/documents-names that MUST NOT appear in response
+    ]
+}
+
+```
+
 
 ## 🚀 Getting Started
 
