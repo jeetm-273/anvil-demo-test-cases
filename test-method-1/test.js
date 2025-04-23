@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 import TestCases from './testCases.js';
-import AnvilPdfHandler from './AnvilPdfHandler.js';
+import AnvilPdfHandler from '../AnvilPdfHandler.js';
 import * as dotenv from 'dotenv';
 dotenv.config();
 

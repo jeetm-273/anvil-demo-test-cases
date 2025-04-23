@@ -4,7 +4,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --silent=false"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest test-method-1/test.js --silent=false",
+    "test:new": "NODE_OPTIONS=--experimental-vm-modules jest test-method-2/test.js --silent=false"
+  },
+  "scripts1": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --silent=false",
+    "test:new": "NODE_OPTIONS=--experimental-vm-modules jest --silent=false"
   },
   "author": "",
   "license": "ISC",
