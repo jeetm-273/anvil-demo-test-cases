@@ -7,7 +7,18 @@ const TestCases = [
         },
         pdfName: 'Annex-037-01-25',
     },
-   
+    {
+      name: 'Test Case 2 - Mold & ordinance law Excluded',
+      correctPayload: {
+        mold_limit: 0,
+        ordinance_law: 5,
+      },
+      incorrectPayload: {
+        mold_limit: [10],
+        ordinance_law: [0],
+      },
+      pdfName: 'LMA-5018'
+  },
 ];
 
 export default TestCases;

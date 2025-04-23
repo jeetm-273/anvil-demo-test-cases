@@ -44,7 +44,6 @@ describe('Document Inclusion Tests', () => {
             for (const invalidPayload of invalids) {
                 it(`Excludes PDF(s) for invalid payload: ${JSON.stringify(invalidPayload)}`, async () => {
                     const fileNames = await generatePdfs(invalidPayload);
-                    console.log("fileNames:", fileNames);
                     expect(fileNames).not.toContain(testCase.pdfName + '.pdf');
                 }, timeout);
             }
